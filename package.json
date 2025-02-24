@@ -1,0 +1,11 @@
+{
+  "name": "ptsupreme",
+  "uuid": "f4397c47-e675-4306-8281-b7c9be63ea4e",
+  "creator": {
+    "version": "3.8.4"
+  },
+  "version": "1.0.0",
+  "description": "cocos creator game base",
+  "author": "pTSern",
+  "license": "ISC"
+}

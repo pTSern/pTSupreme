@@ -1,6 +1,6 @@
 import { Color, IColorLike, IQuatLike, IRectLike, ISizeLike, IVec2Like, IVec3Like, Quat, Rect, Size, Vec2, Vec3 } from "cc";
 
-export namespace _pMath {
+namespace _pMath {
     export type TValueType = 'Vec2' | 'Vec3' | 'Size' | 'Rect' | 'Quat' | 'Color';
 
     export function vec2(other: IVec2Like): Vec2;
@@ -451,3 +451,4 @@ export namespace _pMath {
     }
 }
 
+export default _pMath

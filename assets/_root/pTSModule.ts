@@ -1,6 +1,7 @@
-import { _pMath } from "./pMath";
-import { _pNode } from './pNode';
-import { _pEasing } from './pEasing';
+import _pEasing from "./easing/pEasing";
+import _pMath from "./math/pMath";
+import _pNode from "./node/pNode";
+import _pComponent from "./component/pComponent";
 
 const _global = typeof window === 'undefined' ? globalThis : window;
 

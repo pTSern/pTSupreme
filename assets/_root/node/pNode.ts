@@ -1,6 +1,6 @@
 import { Component, IVec3Like, Node } from "cc";
 
-export namespace _pNode {
+namespace _pNode {
     export interface INodeHolder {
         node: Node
     }
@@ -28,8 +28,8 @@ export namespace _pNode {
      * @returns The component from the target object.
      *
      */
-    export function get_safe_component<TComponent extends Component>(_target: TFlexTarget, _constructor: pTFlex.TNewConstructor<any, TComponent>): TComponent
-    export function get_safe_component<TComponent extends Component>(_target: TFlexTarget, _constructor: string | pTFlex.TNewConstructor<any, TComponent>): TComponent | Component {
+    export function get_safe_component<TComponent extends Component>(_target: TFlexTarget, _constructor: _pTFlex.TNewConstructor<any, TComponent>): TComponent
+    export function get_safe_component<TComponent extends Component>(_target: TFlexTarget, _constructor: string | _pTFlex.TNewConstructor<any, TComponent>): TComponent | Component {
         const node = _target instanceof Node ? _target : _target.node;
 
         // @ts-ignore
@@ -54,3 +54,5 @@ export namespace _pNode {
         }
     }
 }
+
+export default _pNode;
